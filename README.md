@@ -65,3 +65,28 @@ json-server public/db.json --port 8000
 
 E-commerence Shopping Card Application
 ![Screenshot](mainpage.png)
+
+## What is Redux
+
+* Redux is tool for managing both data-state and UI-state in JavaScript application
+* Redux separates the application data and business logic into its own container in order to let React manage just the view.
+* Rather tan a traditional library or a framework, it's an application data-flow architecture
+* it is most compatible with Single Page Application (SPAs) where the management of the states over time can get complex.
+
+Rexux has four components
+
+* Action: are the plain JavaScript objects which are the main source of information used to send data from the application to the store.
+* Reducer are functions that take the current state of the application and an action then return a new state
+* Store: is a JavaScript object which can hold the application's state and provide a few helper methods to access the state, dispatch action and register listeners
+* View: they are react components that displays the data passed down by the store. The smart components are in charge of te actions.
+
+### Installing Redux Packages ###
+
+Intstall: yarn add redux react-redux redux-thunk
+
+#### App.js: Warp App in Provider ####
+
+```
+Profider store-store
+    div className="container">
+```
