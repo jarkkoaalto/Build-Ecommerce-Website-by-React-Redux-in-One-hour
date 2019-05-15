@@ -1,8 +1,10 @@
 import { FETCH_PRODUCTS } from "./types";
 
-export const fetxhProducts = () => (dispatch) => {
+export const fetchProducts = () => (dispatch) => {
     fetch("http://localhost:8000/products").then(res => res.json())
-    .then(data => {
-        return dispatch({ type: FETCH_PRODUCTS, playload: data});
+    .catch(err => fetch('db.json').then(res => res.json()).then(data => data.products))
+    
+        .then(products => {
+        return dispatch({ type: FETCH_PRODUCTS, playload: products});
     });
 }
