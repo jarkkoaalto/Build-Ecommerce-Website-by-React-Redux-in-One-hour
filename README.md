@@ -73,7 +73,7 @@ E-commerence Shopping Card Application
 * Rather tan a traditional library or a framework, it's an application data-flow architecture
 * it is most compatible with Single Page Application (SPAs) where the management of the states over time can get complex.
 
-Rexux has four components
+Redux has four components
 
 * Action: are the plain JavaScript objects which are the main source of information used to send data from the application to the store.
 * Reducer are functions that take the current state of the application and an action then return a new state
