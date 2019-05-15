@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import './App.css';
 import Products from './components/Products';
 import Filter from './components/Filter';
 import Basket from './components/Basket';
+import {Provider} from 'react-redux';
+import store from './store';
 
 import './App.css';
 
@@ -79,6 +82,7 @@ class App extends Component {
 
   render() {
     return (
+      <Provider store={store}>
       <div className="container">
         <h1>E-commerce Shopping Cart Application</h1>
         <hr />
@@ -96,6 +100,7 @@ class App extends Component {
         </div>
 
       </div>
+      </Provider>
     );
   }
 }
